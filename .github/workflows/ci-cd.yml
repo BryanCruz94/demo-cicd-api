@@ -42,5 +42,5 @@ jobs:
           REPO_LOWER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           IMAGE=ghcr.io/$REPO_LOWER/demo-cicd-api:latest
           
-          docker build -t $IMAGE ./Demo.CICD.Api
+          docker build -t $IMAGE .
           docker push $IMAGE
