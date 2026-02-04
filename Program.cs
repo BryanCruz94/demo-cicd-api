@@ -17,7 +17,7 @@ app.MapGet("/health", () => Results.Ok("OK"));
 
 app.MapGet("/version", () => Results.Ok(new
 {
- service = "Demo.CICD.Api",
+ service = "Se esta ejecutando un Cambio mendiante CI/CD - Grupo 3",
  env = app.Environment.EnvironmentName,
  build = Environment.GetEnvironmentVariable("GIT_SHA") ?? "local"
 }));
